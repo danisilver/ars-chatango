@@ -166,5 +166,7 @@ define("app/particulas-config", [ "particlesjs" ], function() {
         particlesjs: "http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min"
     }
 }), require([ "app/main" ], function(e) {
-    e.initialize();
+    window.onload = function(){
+    	e.initialize();
+    };
 }), define("app", function() {});;
